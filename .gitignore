@@ -1,0 +1,19 @@
+# Root ignore file. Each app also has its own .gitignore.
+# Module Federation build diagnostics (contain local machine paths)
+.mf/
+
+# Dependencies and build output
+node_modules/
+dist/
+target/
+
+# Local env files and logs
+.env
+.env.*
+*.log
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

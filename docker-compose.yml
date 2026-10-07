@@ -1,0 +1,30 @@
+services:
+  shell:
+    build: ./shell
+    image: crm-shell:v1
+    ports:
+      - "5000:80"
+    volumes:
+      - ./shell/public/remotes.json:/usr/share/nginx/html/remotes.json:ro
+
+  customer-list:
+    image: crm-customer-list:v1
+    ports:
+      - "5001:80"
+
+  customer-list-v2:
+    image: crm-customer-list:v2
+    ports:
+      - "5011:80"
+
+  customer-detail:
+    build: ./customer-detail
+    image: crm-customer-detail:v1
+    ports:
+      - "5002:80"
+
+  crm-api:
+    build: ./crm-api
+    image: crm-api:v1
+    ports:
+      - "9090:9090"

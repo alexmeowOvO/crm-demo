@@ -1,0 +1,10 @@
+{
+  "customer_list": {
+    "entry": "http://localhost:5011/remoteEntry.js",
+    "version": "2.0.0"
+  },
+  "customer_detail": {
+    "entry": "http://localhost:5002/remoteEntry.js",
+    "version": "1.0.0"
+  }
+}
